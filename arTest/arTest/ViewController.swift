@@ -80,9 +80,9 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
     
     
     @IBAction func addPinBTN(_ sender: Any) {
-//        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.756780, 19.459817))
-//        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.756700, 19.458748))
-        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.756880, 19.459208))
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.758076, 19.460396))
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.757026, 19.461039))
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.756369, 19.461276))
         
     }
     

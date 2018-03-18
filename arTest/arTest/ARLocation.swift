@@ -42,10 +42,9 @@ class ARLocation{
         let location = CLLocation(latitude: latitude, longitude: longitude)
         self.distance = Float(location.distance(from: userLocation))
         
-        if self.modelNode == nil {
+        
             let modelScene = SCNScene(named: "art.scnassets/Car.dae")!
             self.modelNode = modelScene.rootNode.childNode(withName: rootNodeName, recursively: true)!
-            
             // Move model's pivot to its center in the Y axis
             let (minBox, maxBox) = self.modelNode.boundingBox
             self.modelNode.pivot = SCNMatrix4MakeTranslation(0, (maxBox.y - minBox.y)/2, 0)
@@ -57,30 +56,37 @@ class ARLocation{
             positionModel(location)
             
             // Add the model to the scene
-            
+    
+        
+        
+//        let labelNode = SKLabelNode(text: "👾")
+//        labelNode.horizontalAlignmentMode = .center
+//        labelNode.verticalAlignmentMode = .center
+//        return labelNode;
+        
             let newNode = self.modelNode
         
             if delegate != nil{
                 delegate?.addChildNode(modelNode: newNode)
             }
             
-            // Create arrow from the emoji
-//                        let arrow = makeBillboardNode("⬇️".image()!)
-            // Position it on top of the car
+        // Create arrow from the emoji
+        //                        let arrow = makeBillboardNode("⬇️".image()!)
+        // Position it on top of the car
 //                        arrow.position = SCNVector3Make(0, 4, 0)
-            // Add it as a child of the car model
+////             Add it as a child of the car model
 //                        self.modelNode.addChildNode(arrow)
-        } else {
-            // Begin animation
-            SCNTransaction.begin()
-            SCNTransaction.animationDuration = 1.0
-            
-            // Position the model in the correct place
-            positionModel(location)
-            
-            // End animation
-            SCNTransaction.commit()
-        }
+//        } else {
+//            // Begin animation
+//            SCNTransaction.begin()
+//            SCNTransaction.animationDuration = 1.0
+//
+//            // Position the model in the correct place
+//            positionModel(location)
+//
+//            // End animation
+//            SCNTransaction.commit()
+//        }
     }
     
     func rotateNode(_ angleInRadians: Float, _ transform: SCNMatrix4) -> SCNMatrix4 {

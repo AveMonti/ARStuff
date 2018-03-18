@@ -15,6 +15,7 @@
 		D32DB32E205080210001EDC5 /* FloatingPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32DB32D205080210001EDC5 /* FloatingPoint+Extension.swift */; };
 		D32DB330205080A60001EDC5 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D32DB32F205080A50001EDC5 /* art.scnassets */; };
 		D32DB332205083CC0001EDC5 /* ARLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32DB331205083CC0001EDC5 /* ARLocation.swift */; };
+		D3481437205EE7C7009885DF /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3481436205EE7C7009885DF /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D32DB32D205080210001EDC5 /* FloatingPoint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Extension.swift"; sourceTree = "<group>"; };
 		D32DB32F205080A50001EDC5 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		D32DB331205083CC0001EDC5 /* ARLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARLocation.swift; sourceTree = "<group>"; };
+		D3481436205EE7C7009885DF /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				D32DB31B20507D060001EDC5 /* AppDelegate.swift */,
 				D32DB31D20507D060001EDC5 /* ViewController.swift */,
 				D32DB331205083CC0001EDC5 /* ARLocation.swift */,
+				D3481436205EE7C7009885DF /* String+Extension.swift */,
 				D32DB32D205080210001EDC5 /* FloatingPoint+Extension.swift */,
 				D32DB31F20507D060001EDC5 /* Main.storyboard */,
 				D32DB32220507D060001EDC5 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 				D32DB32E205080210001EDC5 /* FloatingPoint+Extension.swift in Sources */,
 				D32DB31E20507D060001EDC5 /* ViewController.swift in Sources */,
 				D32DB31C20507D060001EDC5 /* AppDelegate.swift in Sources */,
+				D3481437205EE7C7009885DF /* String+Extension.swift in Sources */,
 				D32DB332205083CC0001EDC5 /* ARLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
