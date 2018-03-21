@@ -26,8 +26,9 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.arLocationManager.delegate = self;
+        self.outletBTN.isEnabled = false
+        self.outletBTN.backgroundColor = UIColor.gray
+        self.arLocationManager.delegate = self
          self.arView.delegate = self
         let scene = SCNScene()
         
@@ -72,6 +73,10 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
             userLocation = location
+            if(self.outletBTN.isEnabled == false){
+                self.outletBTN.isEnabled = true
+                self.outletBTN.backgroundColor = UIColor.green
+            }
             outletBTN.titleLabel?.text = ("\(location.coordinate.latitude),\(location.coordinate.longitude)")
         
         }
@@ -82,14 +87,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
     
     
     @IBAction func addPinBTN(_ sender: Any) {
-//        // agraf B
-//        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759398, 19.448909))
-//        // agraf A
-//        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759284, 19.449472))
-//        // palarnia
-//        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759550, 19.449398))
-//        // agraf c
-        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.757641, 19.449108))
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.757028, 19.463393))
         
     }
     

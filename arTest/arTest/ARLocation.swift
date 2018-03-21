@@ -32,10 +32,8 @@ class ARLocation{
         self.userLocation = userLocation
         let heading = 10.0
         
-        
         self.heading = heading
         self.updateLocation(pinLocaton.latitude, pinLocaton.longitude)
-        
     }
     
     func updateLocation(_ latitude : Double, _ longitude : Double) {
@@ -137,14 +135,5 @@ class ARLocation{
         
         return atan2(y, x)
     }
-    
-    func makeBillboardNode(_ image: UIImage) -> SCNNode {
-        let plane = SCNPlane(width: 10, height: 10)
-        plane.firstMaterial!.diffuse.contents = image
-        let node = SCNNode(geometry: plane)
-        node.constraints = [SCNBillboardConstraint()]
-        return node
-    }
-    
     
 }
