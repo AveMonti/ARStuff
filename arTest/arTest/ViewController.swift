@@ -12,6 +12,7 @@ import ARKit
 import SceneKit
 import CoreLocation
 class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDelegate,ARLocationDelegae {
+    @IBOutlet weak var outletBTN: UIButton!
     
     func addChildNode(modelNode: SCNNode!) {
         self.arView.scene.rootNode.addChildNode(modelNode)
@@ -71,6 +72,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
             userLocation = location
+            outletBTN.titleLabel?.text = ("\(location.coordinate.latitude),\(location.coordinate.longitude)")
         
         }
     }
@@ -80,9 +82,14 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
     
     
     @IBAction func addPinBTN(_ sender: Any) {
-        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.758076, 19.460396))
-        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.757026, 19.461039))
-        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.756369, 19.461276))
+//        // agraf B
+//        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759398, 19.448909))
+//        // agraf A
+//        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759284, 19.449472))
+//        // palarnia
+//        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759550, 19.449398))
+//        // agraf c
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.757641, 19.449108))
         
     }
     
