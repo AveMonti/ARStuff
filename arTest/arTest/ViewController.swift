@@ -87,8 +87,33 @@ class ViewController: UIViewController, ARSCNViewDelegate, CLLocationManagerDele
     
     
     @IBAction func addPinBTN(_ sender: Any) {
-        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.757028, 19.463393))
-        
+        //
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759236, 19.458667))
+        //
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759247, 19.458724))
+        //
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759244, 19.458759))
+        //
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759252, 19.458815))
+        //
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759261, 19.458861))
+        //
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759262, 19.458898))
+        //
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759261, 19.458946))
+        //
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759267, 19.458995))
+        //
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759272, 19.459030))
+        //
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759276, 19.459059))
+        //
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759277, 19.459094))
+        //
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759282, 19.459166))
+        //
+        self.arLocationManager.updatePin(userLocation: userLocation, pinLocaton: CLLocationCoordinate2DMake(51.759286, 19.459193))
+        //
     }
     
     
