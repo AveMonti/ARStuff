@@ -4,5 +4,5 @@
 * ArKit
 
 
-<img src="/img/location.gif" height="1168" width="540" />
+<img src="/img/location.gif" height="584" width="270" />
 
